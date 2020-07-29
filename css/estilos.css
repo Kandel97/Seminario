@@ -1,0 +1,498 @@
+/* Estilos globales
+-------------------------------------------------- */
+/* Relleno debajo del pie de página y texto del cuerpo más claro */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+h1{
+  font-size: 3.8rem;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  padding-left: 20rem;
+}
+
+
+/* Personaliza el navbar
+-------------------------------------------------- */
+
+/* Clase especial sobre .container que rodea .navbar, utilizada para colocarlo en su lugar. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* visualizacion de ventanas */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* Personaliza el carousel 
+-------------------------------------------------- */
+
+/* clase base Carousel  */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* desde la poscicion de la imagen */
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* contenido 
+-------------------------------------------------- */
+
+/* Centra y alinea el texto dentro de las tres columnas debajo del carrusel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* caracteristicas
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; 
+}
+
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* estilos responsivos
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* La barra de navegación se separa de la parte superior, por lo que doblamos las esquinas */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Aumenta el tamaño del contenido del carrusel */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+.imagen-promocion{
+  background-image: url(../Imagenes/promocion.png);
+  background-position: center center;
+  background-size: cover;
+  height: 35rem;
+  width: 125rem;
+  display: flex; 
+}  
+
+footer{
+  width: 100%;
+  background: #202020;
+  color: #BBB9B8;
+  
+  
+}
+
+.container-all{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  
+}
+
+.contenido-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.column1{
+  max-width: 400px;
+}
+.column1 h1{
+  font-size: 22px;
+  padding-left: 60px;
+}
+
+.column1 p{
+  font-size: 14px;
+  color: #c7c7c7;
+  margin-top: 20px;
+  margin-right: 40px;
+  
+}
+
+.column2{
+  max-width: 400px;
+  padding-left: 5px;
+}
+
+.column2 h1{
+  font-size: 22px;
+  padding-left: 80px;
+}
+
+.row{
+  margin-top: 20px;
+  display: flex;
+  padding-left: 60px;
+}
+
+.row label{
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #c7c7c7;
+}
+
+.column3{
+  max-width: 400px;
+
+}
+
+.column3 h1{
+  font-size: 22px;
+  padding-left: 100px;
+}
+
+.row2{
+  margin-top: 20px;
+  display: flex;
+  padding-left: 100px;
+}
+
+.row2 img{
+  width: 36px;
+  height: 36px;
+}
+
+.row2 label{
+  margin-left: 20px;
+  max-width: 140px;
+  margin-top: 10px;
+}
+
+.container-footer{
+  width: 100%;
+  background: #101010;
+}
+
+.copyright{
+  color: #c7c7c7;
+}
+
+.copyright a{
+  color: white;
+  font-weight: bold;
+}
+
+.footer{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1100px){
+  .contenido-footer{
+    flex-wrap: wrap;
+  }
+
+  .column2, .column3{
+    margin-top: 40px;
+  }
+}
+
+.imagen-logo{
+  background-image: url(../Imagenes/Beautiful_logo.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 35rem;
+  display: flex;
+  align-items: center;
+  
+}
+
+.imagen-logo h1{
+  padding-top: 550px;
+}
+
+/* --------Servicios----------------- */
+
+.servicios{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body{
+  background: #e0e4e5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrap{
+  max-width: 1100px;
+  width: 90%;
+  margin: auto;
+}
+
+.wrap > h1{
+  color: #494b4d;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px 0px;
+  padding-right: 150px;
+}
+
+.wrap > h1::after{
+  content: '';
+  width: 90%;
+  height: 1px;
+  background: #c7c7c7;
+  margin: 20px 0;
+}
+
+.store-wrapper{
+  display: flex;
+}
+
+.category_list{
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+}
+
+.category_list .category_item{
+  display: block;
+  width: 90%;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  background: #296E8D;
+
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.category_list .ct_item_active{
+  background: #2d3e50;
+}
+
+/* ----Productos---- */
+
+.services_list{
+  width: 82%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services_list .service-items{
+  width: 22%;
+  margin-left: 3%;
+  margin-bottom: 25px;
+  box-shadow: 0px 0px 6px 0px rgb(0, 0, 0, 0.22);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.services_list .service-items img{
+  width: 100%;
+  height: 180px;
+}
+
+.services_list .service-items p{
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  background: #2d3e50;
+
+  color: #fff;
+  text-align: center;
+}
+
+/* --------------Galeria-------------------- */
+
+.galeria{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.linea{
+  border-top: 5px solid #0077c0;
+  margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+
+}
+
+.contenedor-imagenes imagen{
+  width: 32%;
+  position: relative;
+  height: 250px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+
+}
+.imagen img{
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+  /* margin-top: 20px; */
+  object-fit: cover;
+}
+
+.overlay h4{
+  font-size: 15px;
+  padding-bottom: 40px;
+
+}
+
+.imagen:hover img{
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width:1000px){
+  .contenedor-imagenes{
+    width: 95%;
+  }
+}
+
+@media screen and (max-width:700px){
+  .contenedor-imagenes{
+    width: 90%;
+  }
+  .contenedor-imagenes .imagen{
+    width: 48%;
+  }
+}
+
+@media screen and (max-width:450px){
+  h1{
+    font-size: 22px;
+  }
+  .contenedor-imagenes{
+    width: 98%;
+  }
+  .contenedor-imagenes .imagen{
+    width: 80%;
+  }
+}
+
+/* ----------------Turno------------------- */
+
+form{
+  background-color: rgb(150, 198, 230);
+  border-radius: 3px;
+  color: #222020;
+  font-size: 12px;
+  padding: 50px;
+  margin: 0 auto;
+  width: 400px;
+  
+
+}
+
+input, text{
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  width: 280px;
+}
+
+.field{
+  border: solid 1px #222020;
+  padding: 10px;
+
+  
+}
+
+.field:focus{
+  border-color: rgb(52, 16, 134);
+}
+
+.centrar-cont{
+  text-align: center;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+
+.wrap > form{
+  margin-bottom: 100px;
+  
+}
+
